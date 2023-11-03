@@ -1,0 +1,45 @@
+namespace Mapify.Editor
+{
+    // Values MUST be synced with their respective VanillaAssets!
+    public enum ItemType
+    {
+        Boombox = 82,
+        CassetteAlbum01 = 83,
+        CassetteAlbum02 = 84,
+        CassetteAlbum03 = 85,
+        CassetteAlbum04 = 86,
+        CassetteAlbum05 = 87,
+        CassetteAlbum06 = 88,
+        CassetteAlbum07 = 89,
+        CassetteAlbum08 = 90,
+        CassetteAlbum09 = 91,
+        CassetteAlbum10 = 92,
+        CassetteAlbum11 = 93,
+        CassetteAlbum12 = 94,
+        CassetteAlbum13 = 95,
+        CassetteAlbum14 = 96,
+        CassetteAlbum15 = 97,
+        CassetteAlbum16 = 98,
+        CassettePlaylist01 = 99,
+        CassettePlaylist02 = 100,
+        CassettePlaylist03 = 101,
+        CassettePlaylist04 = 102,
+        CassettePlaylist05 = 103,
+        CassettePlaylist06 = 104,
+        CassettePlaylist07 = 105,
+        CassettePlaylist08 = 106,
+        CassettePlaylist09 = 107,
+        CassettePlaylist10 = 108,
+        ExpertShovel = 109,
+        GoldenShovel = 110,
+        Lighter = 111,
+        // ManualShunterBooklet = 112,
+        // ManualSteamBooklet = 113,
+        RemoteController = 114,
+        Shovel = 115,
+        Stopwatch = 116,
+        Lantern = 117,
+        Flashlight = 118,
+        EOTLantern = 119
+    }
+}
