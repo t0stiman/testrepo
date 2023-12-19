@@ -1,4 +1,4 @@
-name: download game
+name: Download game
 
 on: workflow_dispatch
 
@@ -8,12 +8,12 @@ jobs:
     runs-on: windows-latest
   
     steps:
-      - uses: "Skippeh/steamfetch-action@v1"
+      - name: Download Steam game
+        uses: dhkatz/steam-download@v1.2.0
         with:
-          username: "${{ secrets.STEAM_USER }}"
-          password: "${{ secrets.STEAM_PASS }}"
-          dir: "${{ github.workspace }}/game_files/"
-          os: "windows"
-          app: 428430
-          osarch: 64
-          files: "Endorlight_x64.exe"
+          username: ${{ secrets.STEAM_USER }}
+          password: ${{ secrets.STEAM_PASS }}
+          totp: ${{ secrets.STEAM_TOTP }}
+          appid: 428430
+          # path: 
+        
