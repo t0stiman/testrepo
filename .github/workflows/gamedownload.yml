@@ -1,0 +1,19 @@
+name: download game
+
+on: workflow_dispatch
+
+jobs:
+  download:
+  
+    runs-on: windows-latest
+  
+    steps:
+      - uses: "Skippeh/steamfetch-action@v1"
+        with:
+          username: "${{ secrets.STEAM_USER }}"
+          password: "${{ secrets.STEAM_PASS }}"
+          dir: "${{ github.workspace }}/game_files/"
+          os: "windows"
+          app: 428430
+          osarch: 64
+          files: "Endorlight_x64.exe"
