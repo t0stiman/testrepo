@@ -12,14 +12,14 @@ jobs:
     runs-on: windows-latest
 
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@latest
       name: checkout code
       
     - name: setup msbuild
-      uses: microsoft/setup-msbuild@v1
+      uses: microsoft/setup-msbuild@latest
       
     - name: setup nugget
-      uses: NuGet/setup-nuget@v1.0.2
+      uses: nuget/setup-nuget@latest
       
     - name: restore nugget packages
       run: nuget restore TestCSharp.sln
