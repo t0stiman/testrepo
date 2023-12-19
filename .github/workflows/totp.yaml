@@ -1,4 +1,4 @@
-name: download game
+name: TOTP
 
 on: workflow_dispatch
 
