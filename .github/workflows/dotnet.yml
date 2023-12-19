@@ -19,7 +19,7 @@ jobs:
       uses: microsoft/setup-msbuild@v1
       
     - name: setup nugget
-      uses: nuget/setup-nuget@v5.3.1
+      uses: nuget/setup-nuget@v1
       
     - name: restore nugget packages
       run: nuget restore TestCSharp.sln
