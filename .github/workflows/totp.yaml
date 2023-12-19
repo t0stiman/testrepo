@@ -1,0 +1,20 @@
+name: download game
+
+on: workflow_dispatch
+
+jobs:
+  download:
+  
+    runs-on: windows-latest
+  
+    steps:
+      - name: Setup steamcmd
+        uses: CyberAndrii/setup-steamcmd@v1
+        
+      - name: Generate auth code
+        id: generate
+        uses: CyberAndrii/steam-totp@v1
+        with:
+          shared_secret: ${{ secrets.STEAM_SHARED_SECRET }}
+        
+      - run: steamcmd +login ${{ secrets.STEAM_USERNAME }} ${{ secrets.STEAM_PASSWORD }} ${{ steps.generate.outputs.code }} +quit
