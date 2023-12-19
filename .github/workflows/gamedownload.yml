@@ -9,11 +9,11 @@ jobs:
   
     steps:
       - name: Download Steam game
-        uses: dhkatz/steam-download@v1.2.0
+        uses: t0stiman/steam-download@main
         with:
           username: ${{ secrets.STEAM_USER }}
           password: ${{ secrets.STEAM_PASS }}
           totp: ${{ secrets.STEAM_TOTP }}
           appid: 428430
-          # path: 
+          filelist: splash.png,screenshot.txt
         
